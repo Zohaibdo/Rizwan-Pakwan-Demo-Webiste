@@ -1,0 +1,70 @@
+/* custom.css */
+
+/* Override Bootstrap primary color */
+:root {
+  --bs-primary: #b22222;          /* Firebrick red */
+  --bs-primary-rgb: 178,34,34;
+  --bs-primary-hover: #8b1a1a;    /* Darker red for hover */
+  --bs-primary-active: #5c0f0f;   /* Even darker red for active states */
+  --bs-btn-primary-bg: var(--bs-primary);
+  --bs-btn-primary-border-color: var(--bs-primary);
+  --bs-btn-primary-hover-bg: var(--bs-primary-hover);
+  --bs-btn-primary-hover-border-color: var(--bs-primary-hover);
+  --bs-btn-primary-active-bg: var(--bs-primary-active);
+  --bs-btn-primary-active-border-color: var(--bs-primary-active);
+}
+
+/* Navbar Brand color */
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+/* Nav link colors */
+.nav-link {
+  color: #800000; /* dark red */
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--bs-primary-hover);
+}
+
+/* Buttons */
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--bs-primary);
+  color: white;
+  border-color: var(--bs-primary-hover);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+
+/* Card price text */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+/* Footer */
+footer.bg-light {
+  background-color: #fff5f5 !important; /* very light red background */
+  color: #800000 !important;
+  border-top: 1px solid var(--bs-primary);
+}
